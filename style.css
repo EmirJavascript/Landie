@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+    }
+    
+    .hero {
+    
+    
+        height: 100vh;
+        background-image: url(/pop1.svg);
+        background-size: auto calc(100vh + 30px);
+        background-repeat: no-repeat;
+        background-position: calc(100% + 500px) bottom;
+       }
+    
+    .container {
+        width: 1960px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    li {
+        margin-right: 60px;
+        list-style: none;
+        
+    
+    }
+    ul {
+        display: flex;
+        color: #33447e;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .header-title {
+      
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 38px;
+        color: #33447e;
+    
+    }
+    .hamburger {
+        display: none;
+    }
+    .buynow {
+        width: 160px;
+        height: 26px;
+        background-color: blue;
+        background-color: #111b47;
+        border-radius: 2px;
+        color: white;
+    
+    }
+    .hero-small-img {
+        
+        width: 500px;
+        margin-bottom: 30px;
+        display: block;
+        margin: 0 auto;
+        display: none;
+      }
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(100vh - 70px);
+      }
+      .hero-text {
+        width: 539px;
+        
+      }
+      .hero-text > h1 {
+        font-weight: 500;
+font-size: 50px;
+line-height: 66px;
+color: #091133;
+      }
+      .hero-text > .lorem-text {
+        margin-top: 20px;
+        font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #505f98;
+
+        
+      }
+      .fatty {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 10px;
+        color: #505f98;
+      }
+      .header-button {
+        width: 189px;
+        height: 36px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        border-radius: 2px;
+        background-color: #111b47;
+        color: white;
+        
+    
+    }
+    .header-button:last-child {
+        margin-left: 30px;
+        background-color: rgba(0,0,0,0);
+        color: #091133;
+        border: 2px solid #091133;
+        opacity: 2;
+        
+    }
+    .header-button:hover {
+        background-color: #273880;
+        color: white;
+        
+        
+    }
+      @media screen and (max-width: 1150px) {
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+        .hero-text {
+            width: 50%;
+        }
+        .hero {
+            background-position: calc(100% + 420px) bottom;
+        }
+        
+      }
+      @media screen and (max-width: 850px) {
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        
+        .hero-text {
+            width: 100%;
+        }
+        .hero {
+            background-image: none;
+        }
+        .hero-small-img {
+            display: block;
+        }
+        ul {
+            display: none;
+        }
+        .buynow {
+            display: none;
+        }
+        .hamburger {
+            display: block;
+        }
+        .lorem-text {
+            display: none;
+        }
+        .fatty {
+            margin-top: 20px;
+            margin-bottom: 26px;
+        }
+        .hero-content {
+            top: 100px;
+        }
+      }
+
+      @media screen and (max-width: 850px) {
+        .buttons {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .buttons button:first-child {
+            margin-bottom: 18px;
+        }
+
+        .buttons button:last-child {
+            margin-left: 0;
+        }
+      }
