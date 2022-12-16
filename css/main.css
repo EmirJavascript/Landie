@@ -1,20 +1,32 @@
-section {
-    max-width: 1110px;
+.Zhibek-second-part {
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 110px 10px;
+    padding: 110px 165px;
     font-family:'Roboto';
 }
+
 .main {
-    margin-bottom: 90px;
+    width: calc(50% - 30px);
+    margin-right: 30px;
 }
-h3 {
+
+.Light-etc {
     font-weight: 500;
     font-size: 36px;
 }
-p {
+
+.girl {
+    width: 50%;
+}
+
+.girl > svg {
+    width: 100%;
+}
+
+.Zhibek-text {
     max-width: 707px;
     width: 100%;
     padding-top: 16px;
@@ -30,39 +42,62 @@ p {
     margin-top: 80px;
 }
 
-@media screen and (max-width: 598px) {
+@media screen and (max-width: 840px) {
+    .Zhibek-second-part {
+        padding: 40px 16px;
+    }
+}
 
-    section {
+@media screen and (max-width: 720px) {
+
+    .Zhibek-second-part {
         background: #9CA7DF;
         padding: 40px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .girl > svg {
+        height: auto;
+        margin-bottom: 34px;
     }
 
     .girl {
-        padding: 0 40px;
+        width: 100%;
     }
 
-    .main>h3{
-        font-size: 26px;
-        fill: #FFFFFF;
+    .main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 61px;
+        margin-right: 0;
+    }
 
+    .Light-etc {
+        font-size: 26px;
+        color: #FFFFFF;
     }
 
     .secondary {
+        text-align: center;
         flex-direction: column;
         color: #FFFFFF;
-
     }
 
     .left-title{
         margin-bottom: 40px;
     }
 
-    svg{
+    .left-title > svg, .right-title > svg {
         width: 100%;
     }
 
-    p{
-        color: #FFFFFF;
+    .left-title > svg > path, .right-title > svg > path {
+        fill: #FFFFFF;
+    }
 
+    .Zhibek-text {
+        color: #FFFFFF;
     }
 }
