@@ -1,0 +1,68 @@
+section {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 110px 10px;
+    font-family:'Roboto';
+}
+.main {
+    margin-bottom: 90px;
+}
+h3 {
+    font-weight: 500;
+    font-size: 36px;
+}
+p {
+    max-width: 707px;
+    width: 100%;
+    padding-top: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+   
+    color: #6F7CB2;
+
+}
+.secondary {
+    display: flex;
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 598px) {
+
+    section {
+        background: #9CA7DF;
+        padding: 40px 10px;
+    }
+
+    .girl {
+        padding: 0 40px;
+    }
+
+    .main>h3{
+        font-size: 26px;
+        fill: #FFFFFF;
+
+    }
+
+    .secondary {
+        flex-direction: column;
+        color: #FFFFFF;
+
+    }
+
+    .left-title{
+        margin-bottom: 40px;
+    }
+
+    svg{
+        width: 100%;
+    }
+
+    p{
+        color: #FFFFFF;
+
+    }
+}
