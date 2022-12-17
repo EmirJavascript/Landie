@@ -1,6 +1,9 @@
+@import url(css/hero.css);
+@import url(css/main.css);
+@import url(css/card.css);
 @import url(css/footer.css);
 @import url(css/price.css);
-@import url(css/main.css);
+
 
 * {
   box-sizing: border-box;
